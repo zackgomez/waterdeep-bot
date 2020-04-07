@@ -1,0 +1,7 @@
+{
+  "name": "waterdeep-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Zack Gomez",
+  "license": "MIT"
+}
