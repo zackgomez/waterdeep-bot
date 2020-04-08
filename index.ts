@@ -59,6 +59,60 @@ type WDMandatoryQuest = {
   rewards: WDRewards;
 };
 
+type WDLord = {
+  name: string;
+  quest_types: Array<string>;
+  building_lord?: boolean;
+};
+
+const kLordCards: Array<WDLord> = [
+  {
+    name: 'Brianne Byndraeth',
+    quest_types: ['Arcana', 'Skullduggery'],
+  },
+  {
+    name: 'Caladorn Cassalanter',
+    quest_types: ['Warfare', 'Skullduggery'],
+  },
+  {
+    name: 'Durnan the Wanderer',
+    quest_types: ['Commerce', 'Warfare'],
+  },
+  {
+    name: 'Khelben Arunsun, the Blackstaff',
+    quest_types: ['Arcana', 'Warfare'],
+  },
+  {
+    name: 'Kyriani Agrivar',
+    quest_types: ['Arcana', 'Piety'],
+  },
+  {
+    name: 'Larissa Neathal',
+    quest_types: [],
+    building_lord: true,
+  },
+  {
+    name: 'Mirt the Moneylender',
+    quest_types: ['Commerce', 'Piety'],
+  },
+  {
+    name: 'Nindil Jalbuck',
+    quest_types: ['Piety', 'Skullduggery'],
+  },
+  {
+    name: 'Nymara Scheiron',
+    quest_types: ['Commerce', 'Skullduggery'],
+  },
+  {
+    name: 'Piergerion the Paladinson',
+    quest_types: ['Piety', 'Warfare'],
+  },
+  {
+    name: 'Sammereza Sulphontis',
+    quest_types: ['Arcana', 'Commerce'],
+  },
+];
+
 const kIntrigueCards: Array<WDIntrigueCard> = [
   {
     name: 'Ambush',
